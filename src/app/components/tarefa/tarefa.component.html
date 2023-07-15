@@ -1,5 +1,16 @@
 <div class="container mt-5">
   <div class="row">
-    <h1 class="text-center montserrat">TODO</h1>
+    <h1 class="text-center montserrat">TODO LIST</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4">
+      <h4 class="montserrat">To do</h4>
+      <div cdkDropList class="example-list">
+        <div class="example-box" *ngFor="let item of todo" cdkDrag>
+          {{ item }}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
