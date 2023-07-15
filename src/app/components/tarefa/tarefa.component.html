@@ -6,8 +6,26 @@
   <div class="row">
     <div class="col-lg-4">
       <h4 class="montserrat">To do</h4>
-      <div cdkDropList class="example-list">
+      <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
         <div class="example-box" *ngFor="let item of todo" cdkDrag>
+          {{ item }}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h4 class="montserrat">In Progress</h4>
+      <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of progress" cdkDrag>
+          {{ item }}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h4 class="montserrat">Done</h4>
+      <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of done" cdkDrag>
           {{ item }}
         </div>
       </div>

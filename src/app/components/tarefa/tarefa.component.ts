@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarefaComponent implements OnInit {
   todo: Array<string> = ['Fazer comida', 'Lavar a louça', 'Lavar o carro'];
+  progress: Array<string> = [];
+  done: Array<string> = [];
 
   constructor() {}
 
