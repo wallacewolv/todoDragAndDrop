@@ -2,6 +2,17 @@
   <div class="row">
     <h1 class="text-center montserrat">TODO LIST</h1>
   </div>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 mb-4">
+      <input
+        type="text"
+        [(ngModel)]="tarefa"
+        (keyup.enter)="adicionarTarefa()"
+        class="form-control form-control-lg text-center"
+        placeholder="Incluir tarefa"
+      />
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-lg-4">

@@ -4,10 +4,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { AppComponent } from './app.component';
 import { TarefaComponent } from './components/tarefa/tarefa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, TarefaComponent],
-  imports: [BrowserModule, DragDropModule],
+  imports: [BrowserModule, DragDropModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

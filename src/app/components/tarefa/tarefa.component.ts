@@ -15,6 +15,8 @@ export class TarefaComponent implements OnInit {
   progress: Array<string> = [];
   done: Array<string> = [];
 
+  tarefa: string = '';
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -34,5 +36,14 @@ export class TarefaComponent implements OnInit {
         event.currentIndex
       );
     }
+  }
+
+  adicionarTarefa() {
+    if (!this.tarefa.trim()) {
+      return;
+    }
+
+    this.todo.push(this.tarefa);
+    this.tarefa = '';
   }
 }

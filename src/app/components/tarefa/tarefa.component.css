@@ -13,7 +13,7 @@
 .example-box {
   padding: 20px 10px;
   border-bottom: solid 1px #ccc;
-  color:black;
+  color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,4 +22,8 @@
   cursor: move;
   background: white;
   font-size: 14px;
+}
+
+input {
+  padding: 20px 10px;
 }
